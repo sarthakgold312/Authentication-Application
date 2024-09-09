@@ -1,0 +1,16 @@
+<?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'app';
+
+//create connection
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+//check connection
+
+if($conn->connect_error){
+    dir('Connection failed: '.$conn->connect_error);
+}
+?>
